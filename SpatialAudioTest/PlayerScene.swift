@@ -10,19 +10,22 @@ import SpriteKit
 
 class PlayerScene: SKScene {
     
-    var node = SKSpriteNode()
+    var node = SKShapeNode()
     var nodePosition = CGPoint()
     var music = SKAudioNode(fileNamed: "jazzyfrenchy.mp3")
     
     
     override func didMove(to view: SKView) {
+        self.backgroundColor = SKColor.init(red: 0.96, green: 0.89, blue: 0.26, alpha: 1)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
         
-        node = SKSpriteNode(color: SKColor.red, size: CGSize(width: 50, height: 50))
+        node = SKShapeNode(circleOfRadius: 32)
+        node.lineWidth = 0
+        node.fillColor = SKColor.init(red: 0.82, green: 0.26, blue: 0.96, alpha: 1)
         node.position = location
         addChild(node)
         

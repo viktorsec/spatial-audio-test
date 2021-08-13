@@ -9,9 +9,12 @@ import SwiftUI
 import SpriteKit
 
 struct ContentView: View {
+    var width = UIScreen.main.bounds.size.width
+    var height = UIScreen.main.bounds.size.height
+    
     var scene: SKScene {
         let scene = PlayerScene()
-        scene.size = CGSize(width: 300, height: 400)
+        scene.size = CGSize(width: width, height: height)
         scene.scaleMode = .fill
         
         return scene
@@ -19,7 +22,7 @@ struct ContentView: View {
     
     var body: some View {
         SpriteView(scene: scene)
-            .frame(width: 300, height: 400)
+            .frame(width: width, height: height)
             .ignoresSafeArea()
     }
 }
