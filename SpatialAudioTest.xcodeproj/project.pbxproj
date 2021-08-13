@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2930E72F26C7314300DF236E /* PlayerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2930E72E26C7314300DF236E /* PlayerScene.swift */; };
+		2930E73126C733AA00DF236E /* jazzyfrenchy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2930E73026C733AA00DF236E /* jazzyfrenchy.mp3 */; };
 		29DEE75026C730C900E6D1AD /* SpatialAudioTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DEE74F26C730C900E6D1AD /* SpatialAudioTestApp.swift */; };
 		29DEE75226C730C900E6D1AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DEE75126C730C900E6D1AD /* ContentView.swift */; };
 		29DEE75426C730CA00E6D1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DEE75326C730CA00E6D1AD /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		2930E72E26C7314300DF236E /* PlayerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScene.swift; sourceTree = "<group>"; };
+		2930E73026C733AA00DF236E /* jazzyfrenchy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jazzyfrenchy.mp3; sourceTree = "<group>"; };
 		29DEE74C26C730C900E6D1AD /* SpatialAudioTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpatialAudioTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DEE74F26C730C900E6D1AD /* SpatialAudioTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAudioTestApp.swift; sourceTree = "<group>"; };
 		29DEE75126C730C900E6D1AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2930E73226C733AD00DF236E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2930E73026C733AA00DF236E /* jazzyfrenchy.mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		29DEE74326C730C900E6D1AD = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +64,13 @@
 		29DEE74E26C730C900E6D1AD /* SpatialAudioTest */ = {
 			isa = PBXGroup;
 			children = (
+				2930E73226C733AD00DF236E /* Assets */,
 				29DEE74F26C730C900E6D1AD /* SpatialAudioTestApp.swift */,
 				29DEE75126C730C900E6D1AD /* ContentView.swift */,
+				2930E72E26C7314300DF236E /* PlayerScene.swift */,
 				29DEE75326C730CA00E6D1AD /* Assets.xcassets */,
 				29DEE75826C730CA00E6D1AD /* Info.plist */,
 				29DEE75526C730CA00E6D1AD /* Preview Content */,
-				2930E72E26C7314300DF236E /* PlayerScene.swift */,
 			);
 			path = SpatialAudioTest;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29DEE75726C730CA00E6D1AD /* Preview Assets.xcassets in Resources */,
+				2930E73126C733AA00DF236E /* jazzyfrenchy.mp3 in Resources */,
 				29DEE75426C730CA00E6D1AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
