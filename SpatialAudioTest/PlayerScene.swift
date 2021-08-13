@@ -9,6 +9,8 @@ import Foundation
 import SpriteKit
 
 class PlayerScene: SKScene {
+    var screenWidth = UIScreen.main.bounds.size.width
+    var screenHeight = UIScreen.main.bounds.size.height
     
     var node = SKShapeNode()
     var nodePosition = CGPoint()
@@ -23,7 +25,7 @@ class PlayerScene: SKScene {
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
         
-        node = SKShapeNode(circleOfRadius: 32)
+        node = SKShapeNode(circleOfRadius: 48)
         node.lineWidth = 0
         node.fillColor = SKColor.init(red: 0.82, green: 0.26, blue: 0.96, alpha: 1)
         node.position = location
@@ -38,7 +40,7 @@ class PlayerScene: SKScene {
         let touch = touches.first
         if let location = touch?.location(in: self) {
             node.run(SKAction.move(to: location, duration: 0))
-            music.position = location
+            music.position = CGPoint(x: location.x - screenWidth / 2, y: location.y - screenHeight / 2)
         }
     }
     
